@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #2A2D34;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6A0DAD;
+    padding: 0.5rem;
+}
+
+.titulo {
+    color: #2A2D34;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    max-width: 100%;
+    width: 150px;
+}
+
+.img-galeria {
+    width: 15%;
+    height: auto;
+}

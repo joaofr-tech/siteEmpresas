@@ -224,111 +224,60 @@ a {
 
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    filter: invert(47%) sepia(92%) saturate(5282%) hue-rotate(263deg) brightness(100%) contrast(96%);
+     filter: invert(47%) sepia(92%) saturate(5282%) hue-rotate(263deg) brightness(100%) contrast(96%);
 }
 
 
 .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
-    filter: invert(83%) sepia(100%) saturate(356%) hue-rotate(183deg) brightness(110%) contrast(97%);
+    transform: scale(1.02);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .cabecalho {
         flex-direction: column;
         text-align: center;
     }
 
     .logo {
-        margin: 0 0 0.5rem 0;
+        width: 60px;
+        margin-bottom: 0.5rem;
     }
 
-    .detalhes-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .titulo {
+        font-size: 1.3rem;
     }
 
-    .fotos-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    }
-
-    .carousel-img {
-        height: 280px;
-    }
-
-    footer .container-footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 0.95rem;
-    }
-
-    .galeria {
-        margin: 1rem;
-        border-radius: 10px;
-    }
-
-    .carousel-img {
-        height: 220px;
+    .cards-grid {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
     }
 
     .card-img {
         height: 120px;
     }
 
-    .card-body {
-        padding: 0.75rem;
+    .detalhes-card {
+        flex-direction: column;
+        text-align: center;
     }
 
     .detalhes-imagem {
         width: 120px;
         height: 120px;
+        margin-bottom: 1rem;
     }
 
     .fotos-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
     }
 
-    footer {
-        padding: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .titulo {
-        font-size: 1.2rem;
+    footer .container-footer {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .titulo-cards {
-        font-size: 1rem;
-    }
-
-    .card {
-        border-radius: 10px;
-    }
-
-    .card-title {
-        font-size: 1rem;
-    }
-
-    .card-desc {
-        font-size: 0.8rem;
-    }
-
-    .carousel-caption {
-        padding: 0.5rem;
-    }
-
-    .carousel-caption h5 {
-        font-size: 1rem;
-    }
-
-    .carousel-caption p {
-        font-size: 0.75rem;
+    .carousel-img {
+        height: 220px;
     }
 }

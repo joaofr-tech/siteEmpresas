@@ -69,7 +69,7 @@ if (carouselContainer) {
     });
 }
 
-// PÁGINA INICIAL
+// PÁGINA INICIAL/CARDS
 const container = document.getElementById("cardsContainer");
 if (container) {
     items.forEach(item => {
